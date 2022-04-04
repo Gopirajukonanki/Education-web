@@ -1,0 +1,78 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "mobileNumber": "8977440013",
+      "userName": "Gopi",
+      "email": "gopi@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 1
+    },
+    {
+      "mobileNumber": "9999999999",
+      "userName": "jeevan",
+      "email": "jeevan12@gmail.com",
+      "password": "111111",
+      "confirmPassword": "111111",
+      "id": 2
+    },
+    {
+      "mobileNumber": "8888888888",
+      "userName": "sai",
+      "email": "sai@gmail.com",
+      "password": "111111",
+      "confirmPassword": "111111",
+      "id": 4
+    },
+    {
+      "mobileNumber": "4444444444",
+      "userName": "aa",
+      "email": "aa@gmail.com",
+      "password": "111111",
+      "confirmPassword": "111111",
+      "id": 8
+    },
+    {
+      "mobileNumber": "8989898989",
+      "userName": "Virat",
+      "email": "vk@gmail.com",
+      "password": "888888",
+      "confirmPassword": "888888",
+      "id": 9
+    },
+    {
+      "mobileNumber": "7993565563",
+      "userName": "ffff",
+      "email": "ffff@gmail.com",
+      "password": "111111",
+      "confirmPassword": "111112",
+      "id": 10
+    },
+    {
+      "mobileNumber": "1111111111",
+      "userName": "rr",
+      "email": "ff@gmail.com",
+      "password": "111111",
+      "confirmPassword": "111112",
+      "id": 11
+    },
+    {
+      "mobileNumber": "7993565563",
+      "userName": "vv",
+      "email": "vv@gmail.com",
+      "password": "111111",
+      "confirmPassword": "111112",
+      "id": 14
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

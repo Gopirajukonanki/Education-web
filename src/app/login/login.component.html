@@ -1,0 +1,63 @@
+<div class="main-class">
+<!--  <span>-->
+    <img src="assets/images/delivery.jpg">
+<!--  </span>-->
+<!--  <div class="row">-->
+    <div class="cust-media" style="position: absolute;">
+<!--    <div style="background: #ffffffeb;">-->
+      <form class="login100-form validate-form login-form login-form" [formGroup]="loginForm" (ngSubmit)="login()">
+        <h5 class="login-text">Login</h5>
+        <div class="form-group">
+          <label for="mobileNumber" class="label-color" [ngClass]="{'label-is-invalid': submitted && f.mobileNumber.errors}">Mobile Number</label>
+          <input type="text" class="form-control"
+                 minlength="10" maxlength="10"
+                 name="mobileNumber"
+                 formControlName="mobileNumber"
+                 id="mobileNumber" aria-describedby="emailHelp"
+                 placeholder="Enter Mobile Number"
+                 (keypress)="keyPressNumbers($event)"
+                 [ngClass]="{'is-invalid': submitted && f.mobileNumber.errors}"/>
+<!--          <div class="text-danger"  *ngIf="submitted && f.mobileNumber">-->
+          <div *ngIf="f.mobileNumber.invalid && f.mobileNumber.touched" class="text-danger">
+            <div *ngIf="f.mobileNumber.errors?.required">Mobile number is required</div>
+            <div *ngIf="f.mobileNumber.errors?.minlength">Mobile number must be 10 digits only</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password" class="label-color" [ngClass]="{'label-is-invalid': submitted && f.password.errors}">Password</label>
+          <input type="password"
+                 class="form-control"
+                 name="password" id="password"
+                 formControlName="password" maxlength="6"
+                 placeholder="Enter Password"
+                 [ngClass]="{ 'is-invalid': submitted && f.password.errors }"/>
+          <span *ngIf="!showPassword"
+                (click)="toggleShowPassword()"
+                class="fa fa-eye-slash show-pass-close-eye" aria-hidden="true" id="eye">
+        </span>
+          <span *ngIf="showPassword"
+                (click)="toggleShowPassword()"
+                class="fa fa-eye show-pass-open-eye" aria-hidden="true" id="eye"
+                >
+        </span>
+<!--          <div *ngIf="submitted && f.password.errors" class="invalid-feedback help-block password-min-error">-->
+          <div *ngIf="f.password.invalid && f.password.touched" class="text-danger">
+            <div *ngIf="f.password.errors?.required">Password is required</div>
+            <div *ngIf="f.password.errors?.minlength">Password must be at least 6 characters long.
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label label-color" for="exampleCheck1">Remember Me</label>
+        </div>
+<!--        <div class="form-group" style="color: red">-->
+<!--          <span>If user is already exit please login else signup</span>-->
+<!--        </div>-->
+        <button type="submit" class="btn btn-success" style="width: 100px">Login</button>
+        <button type="button" class="btn btn-primary" style="float: right; width: 100px" (click)="routingToSignup()">Sign Up</button>
+        <button type="button" class="btn btn-secondary btn-block" style="margin-top: 20px">Reset Password</button>
+      </form>
+    </div>
+  </div>
+<!--</div>-->

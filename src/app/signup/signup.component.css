@@ -1,0 +1,20 @@
+.signup-showpass-open-eye{
+cursor: pointer;
+  pointer-events: all;
+  position: absolute;
+  right: 105px;
+  transform: translate(0, 10%);
+  top: 61%;
+  font-size: 20px;
+  color: #7be57bd1
+}
+.signup-showpass-close-eye{
+  cursor: pointer;
+  pointer-events: all;
+  position: absolute;
+  right: 105px;
+  transform: translate(0, 10%);
+  top: 61%;
+  font-size: 20px;
+  color: #7a797e
+}
