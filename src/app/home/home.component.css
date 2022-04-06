@@ -1,3 +1,53 @@
 agm-map{
   height: 200px;
 }
+.title-courses{
+  font-style: normal;
+  color: #333333;
+  margin-bottom: 26px;
+}
+.flat-row .course{
+  border-bottom: 1px solid #9c9c9c;
+}
+.flat-row .bg-color{
+  background-color: #fcfcfc;
+}
+.flat-row{
+  display: block;
+  position: relative;
+  padding: 93px 0 92px;
+}
+.warning-cust:hover {
+  color: #ffffff;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+/*.flat-course-images li:after {*/
+/*  background: #fff;*/
+/*  content: "";*/
+/*  height: 300px;*/
+/*  left: -150px;*/
+/*  opacity: .2;*/
+/*  position: absolute;*/
+/*  top: -50px;*/
+/*  -webkit-transform: rotate(35deg);*/
+/*  transform: rotate(35deg);*/
+/*  -webkit-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);*/
+/*  transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);*/
+/*  width: 50px;*/
+/*  z-index: 10;*/
+/*}*/
+.flat-course-images{
+  margin-right: -6px;
+  padding-top: 6px;
+}
+.image-style{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row-reverse; */
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-end;
+  padding: 0;
+}
